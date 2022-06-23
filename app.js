@@ -1,10 +1,10 @@
 const express = require("express");
-// var path = require('path');
+var path = require('path');
 var createError = require("http-errors");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan"); //log lỗi
 var cors = require("cors");
-const path= require(path);
+
 
 
 var homeRouter = require("./routes/home");
