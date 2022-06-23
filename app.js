@@ -24,15 +24,15 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.resolve(__dirname, "./public")));
 // Step 2:
 
-app.use("/", indexRouter);
+// app.use("/", indexRouter);
+app.get("/", function (request, response) {
+  response.sendFile(path.resolve(__dirname, "./public", "index.html"));
+});
 app.use("/api", homeRouter);
 app.use("/api/accounts", accountRouter);
 app.use("/api/chat", chatRouter);
 app.use("/api/invoice", invoiceRouter);
 app.use("/api/overview", overviewRouter);
-app.get("/home/*", function (request, response) {
-  response.sendFile(path.resolve(__dirname, "./public", "index.html"));
-});
 // app.use("*", (req, res) => {
 //   res.status(404).json({ error: "not found" });
 // });
