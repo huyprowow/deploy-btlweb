@@ -37,11 +37,10 @@
     "nodemon": "^2.0.14"
   },
   "scripts": {
-    
-    "dev": "nodemon ./server.js",
+    "dev": "node ./server.js",
     "serverstart": "DEBUG=backend:* | npm run dev",
-    "deploy":"npm run dev",
-    "start":"npm run dev"
+    "deploy": "npm run dev",
+    "start": "npm run dev"
   },
   "repository": {
     "type": "git",
@@ -54,6 +53,6 @@
   },
   "homepage": "https://github.com/huyprowow/btlweb#readme",
   "engines": {
-    "node":"14.17.5"
+    "node": "14.17.5"
   }
 }
