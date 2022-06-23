@@ -60,7 +60,7 @@ exports.create_product = [
       // const url = req.protocol + "://" + req.get("host");
       // const imgPath = url + "/public/images";
       try {
-        const imgPath = path.join(__dirname, "../../frontend/public/images");
+        const imgPath = path.join(__dirname, "../public/images");
         const fileUpload = new Resize(imgPath);
         // console.log(imgPath);
         console.log(fileUpload);
