@@ -37,10 +37,11 @@
     "nodemon": "^2.0.14"
   },
   "scripts": {
-    "start": "node ./server.js",
+    
     "dev": "nodemon ./server.js",
     "serverstart": "DEBUG=backend:* | npm run dev",
-    "deploy":"npm run dev"
+    "deploy":"npm run dev",
+    "start":"npm run dev"
   },
   "repository": {
     "type": "git",
